@@ -9,7 +9,7 @@ TARGETS := m3rger-linux m3rger-windows.exe m3rger-darwin
 SOURCE := $(shell find . -type f -iname '*.go')
 
 # Executables
-GOVENDOR := $(GOPATH)/bin/govendor
+DEP := $(GOPATH)/bin/dep
 GOMETALINTER := $(GOPATH)/bin/gometalinter
 
 # Sanity Check
@@ -24,23 +24,23 @@ all: $(TARGETS)
 .PHONY: all
 
 setup:
-	go get -u github.com/alecthomas/gometalinter github.com/kardianos/govendor
+	go get -u github.com/alecthomas/gometalinter github.com/golang/dep/cmd/dep
 	$(GOMETALINTER) --install
-	$(GOVENDOR) sync
+	$(DEP) ensure
 .PHONY: setup
 
 m3rger-%.exe: $(SOURCE)
-	GOOS=$* $(GOVENDOR) build -ldflags $(LDFLAGS) -o "$@"
+	GOOS=$* go build -ldflags $(LDFLAGS) -o "$@"
 
 m3rger-%: $(SOURCE)
-	GOOS=$* $(GOVENDOR) build -ldflags $(LDFLAGS) -o "$@"
+	GOOS=$* go build -ldflags $(LDFLAGS) -o "$@"
 
 lint:
 	$(GOMETALINTER) --disable=gotype --deadline=90s .
 .PHONY: lint
 
 test:
-	$(GOVENDOR) test -v +local
+	go test -v .
 .PHONY: test
 
 clean:
