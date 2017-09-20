@@ -1,4 +1,6 @@
 # m3rger
+[![Build Status](https://travis-ci.org/benjdewan/m3rger.svg?branch=master)](https://travis-ci.org/benjdewan/m3rger)
+
 m3rger is a tool for merging up to 3 layers of YAML configuration files.
 
 ## Usage
