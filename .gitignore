@@ -4,3 +4,4 @@
 /vendor/github.com/
 /vendor/gopkg.in/
 /vendor/golang.org/
+/*.yml
