@@ -1,0 +1,6 @@
+*.sw[a-z]
+*~
+/m3rger*
+/vendor/github.com/
+/vendor/gopkg.in/
+/vendor/golang.org/
