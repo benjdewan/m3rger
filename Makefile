@@ -27,7 +27,6 @@ setup:
 	go get -u github.com/alecthomas/gometalinter github.com/kardianos/govendor
 	$(GOMETALINTER) --install
 	$(GOVENDOR) sync
-	echo $(shell ls ./vendor)
 .PHONY: setup
 
 m3rger-%.exe: $(SOURCE)
@@ -37,7 +36,7 @@ m3rger-%: $(SOURCE)
 	GOOS=$* $(GOVENDOR) build -ldflags $(LDFLAGS) -o "$@"
 
 lint:
-	$(GOMETALINTER) --deadline=90s main.go
+	echo $(shell ls vendor)
 .PHONY: lint
 
 test:

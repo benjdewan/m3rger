@@ -5,9 +5,9 @@ import (
 	"io/ioutil"
 	"log"
 
+	"github.com/alecthomas/kingpin"
 	"github.com/imdario/mergo"
-	"gopkg.in/alecthomas/kingpin.v2"
-	yamlparser "gopkg.in/yaml.v1"
+	yamlparser "gopkg.in/yaml.v2"
 )
 
 var version = "DEV_BUILD"

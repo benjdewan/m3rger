@@ -1,118 +1,42 @@
 {
 	"comment": "",
-	"ignore": "",
+	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "NVK14tpLb26kPzIX67+uDXS4/y4=",
-			"path": "github.com/alecthomas/assert",
-			"revision": "561411bbb7e98b005e520f4c0f491c2d23782048",
-			"revisionTime": "2016-08-29T03:56:08Z"
+			"checksumSHA1": "JJdCygw0hMWhr3CP8ZAL3ayMFls=",
+			"path": "github.com/alecthomas/kingpin",
+			"revision": "297a08eca3cfe76b1bc87a752ec3272fbac539ef",
+			"revisionTime": "2017-07-22T00:32:57Z"
 		},
 		{
-			"checksumSHA1": "8I+BkG7C9re9G+SCa7NR+q6wwyc=",
-			"path": "github.com/alecthomas/colour",
-			"revision": "60882d9e27213e8552dcff6328914fe4c2b44bc9",
-			"revisionTime": "2016-05-24T08:22:31Z"
-		},
-		{
-			"checksumSHA1": "EdVGE84JbLoRAcAKaMk0O8z7JNM=",
-			"path": "github.com/alecthomas/repr",
-			"revision": "cf65cb4862d253d2399cc9c31a6153c12a7e8345",
-			"revisionTime": "2017-08-28T23:13:21Z"
-		},
-		{
-			"checksumSHA1": "eL44HknVGyM9pPBY/Lz9t5WUvpw=",
+			"checksumSHA1": "KmjnydoAbofMieIWm+it5OWERaM=",
 			"path": "github.com/alecthomas/template",
 			"revision": "a0175ee3bccc567396460bf5acd36800cb10c49c",
 			"revisionTime": "2016-04-05T07:15:01Z"
 		},
 		{
-			"checksumSHA1": "pcfwb2aFV05C9VEiW1npaPelbI0=",
+			"checksumSHA1": "3wt0pTXXeS+S93unwhGoLIyGX/Q=",
 			"path": "github.com/alecthomas/template/parse",
 			"revision": "a0175ee3bccc567396460bf5acd36800cb10c49c",
 			"revisionTime": "2016-04-05T07:15:01Z"
 		},
 		{
-			"checksumSHA1": "Js9yeJtM74TuQ4fJDDa/NtFMv34=",
+			"checksumSHA1": "fCc3grA7vIxfBru7R3SqjcW+oLI=",
 			"path": "github.com/alecthomas/units",
 			"revision": "2efee857e7cfd4f3d0138cc3cbb1b4966962b93a",
 			"revisionTime": "2015-10-22T06:55:26Z"
 		},
 		{
-			"checksumSHA1": "0y5phFHOrFHf/2w+q/E4FZHQXVI=",
-			"path": "github.com/davecgh/go-spew/spew",
-			"revision": "a476722483882dd40b8111f0eb64e1d7f43f56e4",
-			"revisionTime": "2017-08-29T19:49:58Z"
-		},
-		{
-			"checksumSHA1": "a2yC46a1qsJomgY6rb+FkTFiqmE=",
-			"path": "github.com/davecgh/go-spew/spew/testdata",
-			"revision": "a476722483882dd40b8111f0eb64e1d7f43f56e4",
-			"revisionTime": "2017-08-29T19:49:58Z"
-		},
-		{
-			"checksumSHA1": "VWQjAnpdhiuqUDXXn7J3aFcf4w8=",
+			"checksumSHA1": "66lykxpWgSmQodnhkADqn6tnroQ=",
 			"path": "github.com/imdario/mergo",
 			"revision": "e3000cb3d28c72b837601cac94debd91032d19fe",
 			"revisionTime": "2017-06-20T10:47:01Z"
 		},
 		{
-			"checksumSHA1": "cAY8WWlvwXakO9nUpQbqNW13JkI=",
-			"path": "github.com/mattn/go-isatty",
-			"revision": "fc9e8d8ef48496124e79ae0df75490096eccf6fe",
-			"revisionTime": "2017-03-22T23:44:13Z"
-		},
-		{
-			"checksumSHA1": "RZOdTSZN/PgcTqko5LzIAzw+UT4=",
-			"path": "github.com/pmezard/go-difflib/difflib",
-			"revision": "792786c7400a136282c1664665ae0a8db921c6c2",
-			"revisionTime": "2016-01-10T10:55:54Z"
-		},
-		{
-			"checksumSHA1": "m7jW9/geqk1flilV96ghdtmyups=",
-			"path": "github.com/sergi/go-diff/diffmatchpatch",
-			"revision": "feef008d51ad2b3778f85d387ccf91735543008d",
-			"revisionTime": "2017-04-09T07:17:39Z"
-		},
-		{
-			"checksumSHA1": "Y9SmG2U/qez70e6PIe03dts063Y=",
-			"path": "github.com/stretchr/testify/assert",
-			"revision": "890a5c3458b43e6104ff5da8dfa139d013d77544",
-			"revisionTime": "2017-07-05T02:17:15Z"
-		},
-		{
-			"checksumSHA1": "lqWTHaKZukvwnhrgHO7m44+V3Bw=",
-			"path": "golang.org/x/sys/unix",
-			"revision": "b6e1ae21643682ce023deb8d152024597b0e9bb4",
-			"revisionTime": "2017-09-18T15:00:50Z"
-		},
-		{
-			"checksumSHA1": "E6R1JDPJiX6c6Qvo2StxUOrjdPU=",
-			"path": "gopkg.in/alecthomas/kingpin.v2",
-			"revision": "1087e65c9441605df944fb12c33f0fe7072d18ca",
-			"revisionTime": "2017-07-27T04:22:29Z"
-		},
-		{
-			"checksumSHA1": "538I8ghUdvZa25NxgMUDpq14Qic=",
-			"path": "gopkg.in/check.v1",
-			"revision": "20d25e2804050c1cd24a7eea1e7a6447dd0e74ec",
-			"revisionTime": "2016-12-08T18:13:25Z"
-		},
-		{
-			"checksumSHA1": "EN0uJ9QjGGt0K1ZdiXnTvzkRWAc=",
-			"path": "gopkg.in/yaml.v1",
-			"revision": "9f9df34309c04878acc86042b16630b0f696e1de",
-			"revisionTime": "2014-09-24T16:16:07Z"
-		},
-		{
-			"checksumSHA1": "UhL+LmSkOZ8Vb8EDX3fW3DCp68g=",
+			"checksumSHA1": "RDJpJQwkF012L6m/2BJizyOksNw=",
 			"path": "gopkg.in/yaml.v2",
 			"revision": "eb3733d160e74a9c7e442f435eb3bea458e1d19f",
 			"revisionTime": "2017-08-12T16:00:11Z"
-		},
-		{
-			"path": "kingpin",
-			"revision": ""
 		}
 	],
 	"rootPath": "github.com/benjdewan/m3rger"
