@@ -36,7 +36,7 @@ m3rger-%: $(SOURCE)
 	GOOS=$* $(GOVENDOR) build -ldflags $(LDFLAGS) -o "$@"
 
 lint:
-	echo $(shell ls vendor)
+	gometalinter --deadline=90s .
 .PHONY: lint
 
 test:
