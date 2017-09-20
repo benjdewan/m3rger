@@ -7,20 +7,17 @@ notifications:
     on_failure: never
 git:
   depth: 5
-
 before_deploy:
 - sha256sum m3rger* > checksums.sha256
-
 deploy:
   skip_cleanup: true
   provider: releases
+  api_key:
+    secure: fAqdhD3UVqY3n+k60zNYuSWm647g3TmRF3+b7/dWKijEg+Vqekyrvxs7udSYkFbib0noLhZq2evSurFB77SB/988wVqkcLgRDjDfOglH+MfS3q1LDYWJbO8Ylx3WKjr5tQ0IVbJi6wrj1hShEe2/c1hChxLgevMIBCMUE+ubWS2g24OzDIpb4zefhUplUyHF8zPRuFHg3/h/wYxUa8tmR0+AIOHARRNEMr2j5C+0KZfRhvMCz0W2OgvHrmkt08JOM6IYVnkmjeUcgIWV5Mih0wOhcTo1CiLUZM0NITT1m9VwqfMBiRLSWDVpTLlou0rALBN+fEskIHDEd5EjVHHySkbQi5aM6iXFqQ0pm6FDDHARyeZqLyXiHjVI4bNW0hAcQmDfzYRGsVKf2oKunXg1EzgINy8UrlRV9CuD73wUZzxFQz04Z4ZMifxd5n7VD7G8smKrgiHP+UaeRURAVIZNt+qZDGvuVz6fdwjtEE99oDUssTQTwa3LkV9oTWzAncu7cJpMYfx/G7JFt4bPA4wFwx+0s7mytH0hN5hQAANTtLFvMHI63j2th+SJzVpRE8u3FVaNMa1q9mfaZ+wq7JWxDPOGxFVpuMho/El4wHuIrehVAzWSE0Av23RnFQnFNokahPjSrmx3onsgUZGbbhq/qQDR1KmGrhoM9KLaNXBGSig=
   file:
       - m3rger-linux
       - m3rger-darwin
       - m3rger-windows.exe
       - checksums.sha256
-  api_key:
-    secure: UdI8QXj4ftVKoE2poKVC3NKr2xGgVHdC5+/o5I3C7VXKibI98Go/t6TfWkkOBH8fzYjj5hSZ+npjeopZCJUrSezRL1mtC7gyF5h+ExvcgkJjJNv/VhFQpopddJUifHiDXk/oGSV/cXsZR0N0IGfX0QB2/Y6DiLY5bAuZ6hSMHgOr8jsFKPKZoMYOFImdLr9Ducln1aPgNQO/HlGVrGwDsCUBazD4onUm7fMBNXcBUvnSLVas3izTda+NYYlX2aQncSrqvuQFi7sK+ny4RwX2tCW2m2/5WVk5oHTmhzr9B4FIfYi5pyzPKywvUNwJgkepLCbhkZVx3Uh7nN/rZCiRhBPa3qiVXihexi0ydbwnJm+d5vjbFreK2fzjGHEDT2jEUfgVzQiV6XE8Cch5yVT+gfg43E+nUF70Uja063ti8/9GvA27h0c1dg+bu5tz8p/lB8YIv3f0NeYG3odAzTH/mfSgV5S8l5ztGqMw2G192ZdvAPnSI0GMutoa4d1tdzrTTi8n9iY9sCJdrMTtuGK2hzUBRNUlFjw5+mT+WQIGdUdgi/A2Q4NmY+I7NEyeWwPdqB1MHhjqdIXjqWY+HWxparCaUgdg2rkA4z+VvVDVnCc2lqKYeiV9x1cvdFpAFiyGg1Yg6KluZoialh/xwNq761JsTZGcNWCpRrFkYjbs8PA=
   on:
-    tags: true
     repo: benjdewan/m3rger
