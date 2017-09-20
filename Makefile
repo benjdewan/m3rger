@@ -36,7 +36,7 @@ m3rger-%: $(SOURCE)
 	GOOS=$* $(GOVENDOR) build -ldflags $(LDFLAGS) -o "$@"
 
 lint:
-	gometalinter --deadline=90s .
+	$(GOMETALINTER) --disable=gotype --deadline=90s .
 .PHONY: lint
 
 test:
