@@ -54,8 +54,8 @@ func writeYAML(yaml map[string]interface{}, file string) error {
 }
 
 func merge(def, overrides map[string]interface{}) (map[string]interface{}, error) {
-	err := mergo.Map(&def, overrides)
-	return def, err
+	err := mergo.Map(&overrides, def)
+	return overrides, err
 }
 
 func parseCLI() (string, string, string, string) {
