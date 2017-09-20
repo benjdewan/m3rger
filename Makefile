@@ -27,6 +27,7 @@ setup:
 	go get -u github.com/alecthomas/gometalinter github.com/kardianos/govendor
 	$(GOMETALINTER) --install
 	$(GOVENDOR) sync
+	echo $(shell ls ./vendor)
 .PHONY: setup
 
 m3rger-%.exe: $(SOURCE)
