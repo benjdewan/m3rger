@@ -32,16 +32,22 @@ import (
 
 var version = "DEV_BUILD"
 
+type files struct {
+	def  string
+	low  string
+	high string
+}
+
 func main() {
-	defFile, low, high, out := parseCLI()
-	defYAML, err := readYAMLFile(defFile)
+	configs, out := parseCLI()
+	defYAML, err := readYAMLFile(configs.def)
 	if err != nil {
 		log.Fatal(err)
 	}
-	if defYAML, err = overwrite(defYAML, low); err != nil {
+	if defYAML, err = overwrite(defYAML, configs.low); err != nil {
 		log.Fatal(err)
 	}
-	if defYAML, err = overwrite(defYAML, high); err != nil {
+	if defYAML, err = overwrite(defYAML, configs.high); err != nil {
 		log.Fatal(err)
 	}
 
@@ -78,7 +84,7 @@ func merge(def, overrides map[string]interface{}) (map[string]interface{}, error
 	return overrides, err
 }
 
-func parseCLI() (string, string, string, string) {
+func parseCLI() (files, string) {
 	var (
 		defFile = kingpin.Arg("default",
 			"A YAML file with default values that may be overridden").
@@ -97,7 +103,7 @@ func parseCLI() (string, string, string, string) {
 	)
 	kingpin.Version(version)
 	kingpin.Parse()
-	return *defFile, *low, *high, *out
+	return files{def: *defFile, low: *low, high: *high}, *out
 }
 
 func readYAMLFile(file string) (map[string]interface{}, error) {
