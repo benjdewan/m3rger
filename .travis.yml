@@ -20,4 +20,5 @@ deploy:
       - m3rger-windows.exe
       - checksums.sha256
   on:
+    tags: true
     repo: benjdewan/m3rger
