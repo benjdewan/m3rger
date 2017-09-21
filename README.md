@@ -2,7 +2,6 @@
 [![Build Status](https://travis-ci.org/benjdewan/m3rger.svg?branch=master)](https://travis-ci.org/benjdewan/m3rger)
 [![Go Report Card](https://goreportcard.com/badge/github.com/benjdewan/m3rger)](https://goreportcard.com/report/github.com/benjdewan/m3rger)
 [![codebeat badge](https://codebeat.co/badges/38252ff8-f3e5-4c64-826d-7f4489d3b6b8)](https://codebeat.co/projects/github-com-benjdewan-m3rger-master)
-[![Docker Automated Build](https://img.shields.io/docker/automated/benjdewan/m3rger.svg)](https://hub.docker.com/r/benjdewan/m3rger/)
 
 m3rger is a tool for merging up to 3 layers of YAML configuration files.
 
