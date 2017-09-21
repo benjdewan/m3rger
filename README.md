@@ -30,6 +30,23 @@ Args:
 *   `high`: Scalar values and arrays in this file will overwrite those of
     `low` and/or `default` whenever there is a collision. Maps are merged.
 
+## Docker usage
+The only trick with running `m3rger` in a container is remembering that the
+files to be merged have to exist *inside* the container for `m3rger` to be
+able to read them. The easiest way to do that is using `--volume` to mount
+the directory the files are in:
+```console
+$ ls
+default.yml high.yml    low.yml
+$ docker run --rm --read-only --volume=$(pwd):/input:ro \
+    benjdewan/m3rger /input/default.yml /input/low.yml /input/high.yml
+foo: mumble
+key: val
+map:
+  baz: quux
+  key: val
+```
+
 ## Examples
 
 ### 1. Just a default file
