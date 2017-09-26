@@ -115,5 +115,4 @@ func readYAMLFile(file string) (map[string]interface{}, error) {
 
 	err = yamlparser.Unmarshal(data, &yaml)
 	return yaml, err
-
 }
