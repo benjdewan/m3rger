@@ -108,7 +108,7 @@ func parseCLI() (files, string) {
 
 func readYAMLFile(file string) (map[string]interface{}, error) {
 	yaml := make(map[string]interface{})
-	data, err := ioutil.ReadFile(file)
+	data, err := ioutil.ReadFile(file) // #nosec
 	if err != nil {
 		return yaml, err
 	}
