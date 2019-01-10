@@ -1,6 +1,6 @@
 sudo: false
 language: go
-go: "1.11"
+go: '1.11'
 notifications:
   email:
     on_success: never
@@ -13,12 +13,12 @@ deploy:
   skip_cleanup: true
   provider: releases
   api_key:
-    secure: fAqdhD3UVqY3n+k60zNYuSWm647g3TmRF3+b7/dWKijEg+Vqekyrvxs7udSYkFbib0noLhZq2evSurFB77SB/988wVqkcLgRDjDfOglH+MfS3q1LDYWJbO8Ylx3WKjr5tQ0IVbJi6wrj1hShEe2/c1hChxLgevMIBCMUE+ubWS2g24OzDIpb4zefhUplUyHF8zPRuFHg3/h/wYxUa8tmR0+AIOHARRNEMr2j5C+0KZfRhvMCz0W2OgvHrmkt08JOM6IYVnkmjeUcgIWV5Mih0wOhcTo1CiLUZM0NITT1m9VwqfMBiRLSWDVpTLlou0rALBN+fEskIHDEd5EjVHHySkbQi5aM6iXFqQ0pm6FDDHARyeZqLyXiHjVI4bNW0hAcQmDfzYRGsVKf2oKunXg1EzgINy8UrlRV9CuD73wUZzxFQz04Z4ZMifxd5n7VD7G8smKrgiHP+UaeRURAVIZNt+qZDGvuVz6fdwjtEE99oDUssTQTwa3LkV9oTWzAncu7cJpMYfx/G7JFt4bPA4wFwx+0s7mytH0hN5hQAANTtLFvMHI63j2th+SJzVpRE8u3FVaNMa1q9mfaZ+wq7JWxDPOGxFVpuMho/El4wHuIrehVAzWSE0Av23RnFQnFNokahPjSrmx3onsgUZGbbhq/qQDR1KmGrhoM9KLaNXBGSig=
+    secure: P+Rncrwu7uTco+vbG2lI29GFbLe9CZkEQK/4aHPqD0lzdgR02TJf5j+d35cNyav4KNwOKxea6HyCBA88KzZ+t3n8TQ0N3aGA2ugLXkynUees18HZ7c1ARD50uc1IjhXEFBUHuULp/BzPa8x/4Keg1E9SPRwawuBJmoWkbMyI0jv0aVTFda7Cv7MR4hIyu4GqUWb1yl2SldB+kjgoufg9sItSImJosEpn+b+uAZUXF/LouW2fSYGDL0HYhoe4vWtsssGDEb+CbWORnGjvGcVZdFlDNA7wPxKVEJ4ejlNtZcjpVoxriwu6MImMygL7ZJwXrNcNqhorA5pgmZjPAhqA1eqUhq16NI1KGl9v0gRLlSxWg9r0F2TWoNPGhubTmM7eZNBn7RVgYmBzQPHkTdfKJJmiedzfzmieGRdbLWwwkgdhhupniCZPSD2xzKJ4lAClY6KqFu4sAAQUM9gfD+2wJQ2mQNCu5xthgQMtDGjJohtp23uQRXeRqmH7eaMBGqBE5wG4YMzJLRFM/ZdUoY7wVz/2l3IhgHv5N9olfNA38FV6YzzmiAqd/xAqi7qzc4hNgQkk+RxER2vthfV4WoTEbMJSpChovOksXwS33H8bPqFUiiZxcaaKkmeJFFMufi0PtIdF5h1HSlFmOQ8CIlTZSHSqQ+L/cZY1UBT24Jgy1N4=
   file:
-      - m3rger-linux
-      - m3rger-darwin
-      - m3rger-windows.exe
-      - checksums.sha256
+  - m3rger-linux
+  - m3rger-darwin
+  - m3rger-windows.exe
+  - checksums.sha256
   on:
     tags: true
     repo: benjdewan/m3rger
